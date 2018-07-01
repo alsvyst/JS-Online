@@ -1,0 +1,29 @@
+ul {
+    width: max-content;
+}
+
+li, button, span.close {
+    cursor: pointer;
+}
+
+li:hover, span.close:hover {
+    color: red;
+}
+
+span {
+    display: block;
+}
+
+div.show {
+    padding: 20px;
+    border: 1px solid red;
+    width: 300px;
+    position: relative;
+}
+
+span.close {
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    right: 6px;
+}
