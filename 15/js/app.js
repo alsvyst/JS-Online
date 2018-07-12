@@ -31,14 +31,7 @@ function onChangeCountry(e) {
     : `https://newsapi.org/v2/top-headlines?country=${select.value}&apiKey=${apiKey}`;
     // Делаем запрос на получение новостей
 
-  http.get(request)
-    .then(data => {
-      ui.clearContainer();
-      data.articles.forEach(news => ui.addNews(news));
-    })
-    .catch(err => {
-      ui.showError(err);
-    });
+  NewsRequestHandler(request);
 }
 
 function onChangeCategory(e) {
@@ -51,14 +44,7 @@ function onChangeCategory(e) {
   let request = (select.options.selectedIndex) ? `https://newsapi.org/v2/top-headlines?country=${select.value}&category=${category.value}&apiKey=${apiKey}`
     : `https://newsapi.org/v2/top-headlines?category=${category.value}&apiKey=${apiKey}`;
 
-  http.get(request)
-    .then(data => {
-      ui.clearContainer();
-      data.articles.forEach(news => ui.addNews(news));
-    })
-    .catch(err => {
-      ui.showError(err);
-    });
+  NewsRequestHandler(request);
 }
 
 function onChangeResource(e) {
@@ -69,14 +55,7 @@ function onChangeResource(e) {
     $('select').formSelect();
   });
 
-  http.get(`https://newsapi.org/v2/top-headlines?sources=${resouces.value}&apiKey=${apiKey}`)
-    .then(data => {
-      ui.clearContainer();
-      data.articles.forEach(news => ui.addNews(news));
-    })
-    .catch(err => {
-      ui.showError(err);
-    });
+  NewsRequestHandler(`https://newsapi.org/v2/top-headlines?sources=${resouces.value}&apiKey=${apiKey}`);
 }
 
 function onSearch(e) {
@@ -99,5 +78,16 @@ function createOptions(e) {
       $(document).ready(function () {
         $('select').formSelect();
       });
+    });
+}
+
+function NewsRequestHandler(url) {
+  http.get(url)
+    .then(data => {
+      ui.clearContainer();
+      data.articles.forEach(news => ui.addNews(news));
+    })
+    .catch(err => {
+      ui.showError(err);
     });
 }
