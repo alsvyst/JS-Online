@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <style>
+        .myModal, .myModal2 {
+            width: 500px;
+            height: 500px;
+            background-color: #fff;
+            display: none;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="btn btn-primary" data-modal data-target=".myModal">Open modal</button>
+    <button class="btn btn-primary" data-modal data-target=".myModal2">Open modal 2</button>
+</div>
+
+<!-- Modal -->
+<div class="myModal">
+    <h3 class="text-center">Hello</h3>
+    <button class="btn btn-danger myCloseClass">Close</button>
+</div>
+<!-- /.myModal -->
+
+<!-- Modal -->
+<div class="myModal2">
+    <h3 class="text-center">Hello 2</h3>
+    <button class="btn btn-danger myCloseClass">Close</button>
+</div>
+<!-- /.myModal -->
+
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script src="js/jquery.easyModal.js"></script>
+<script>
+    $("[data-modal]").on("click", function (e) {
+      const target = $(this).attr("data-target");
+      $(target).easyModal({
+        overlayOpacity: 0.6,
+        closeClass: ".myCloseClass",
+        autoClose: true,
+        autoCloseTime: 5000
+      });
+    });
+</script>
+</body>
+</html>
