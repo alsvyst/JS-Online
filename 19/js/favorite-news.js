@@ -45,7 +45,10 @@ function removeFavorite(e) {
     const id = e.target.dataset.id;
     favoriteNews.removeFavoriteNews(id);
     ui.deleteNews(id);
-    ui.showMessage('News deleted');
+    ui.showMessage({
+      text: 'News deleted',
+      error: false
+    });
     if (document.querySelector('.news-container .container .row.center-align').childElementCount === 0) {
       ui.showEmptyFavoriteNews();
     }

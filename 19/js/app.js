@@ -148,10 +148,16 @@ function addFavorite(e) {
     const oneNews = newsStore.getNews()[index];
     favoriteNews.addFavoriteNews(oneNews)
       .then(data => {
-        ui.showMessage('News added');
+        ui.showMessage({
+          text: 'News added',
+          error: false
+        });
       })
       .catch(err => {
-        ui.showMessage('Error!');
+        ui.showMessage({
+          text: 'Error! News did not add!',
+          error: true
+        });
       })
   }
 }

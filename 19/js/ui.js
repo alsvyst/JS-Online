@@ -188,8 +188,8 @@ class UI {
     }
 
     const alert = document.createElement('div');
-    alert.classList.add('alert', 'grey', 'white-text', `z-depth-2`);
-    alert.textContent = msg;
+    alert.classList.add('alert', 'white-text', `z-depth-2`, `${msg.error ? 'red' : 'teal'}`);
+    alert.textContent = msg.text;
     alert.style.position = 'fixed';
     alert.style.top = `${fullAlertsHeight}px`;
     alert.style.right = '30px';
