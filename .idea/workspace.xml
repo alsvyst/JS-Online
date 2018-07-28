@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="feb88fe7-df0b-428f-8423-444b1f83c56f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19/favorite-news.html" beforeDir="false" afterPath="$PROJECT_DIR$/19/favorite-news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/19/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/19/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19/js/favorite-news.js" beforeDir="false" afterPath="$PROJECT_DIR$/19/js/favorite-news.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/19/js/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/19/js/ui.js" afterDir="false" />
-    </list>
+    <list default="true" id="feb88fe7-df0b-428f-8423-444b1f83c56f" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -132,11 +125,6 @@
               <item name="JS Online" type="b2602c69:ProjectViewProjectNode" />
               <item name="JS Online" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JS Online" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JS Online" type="462c0819:PsiDirectoryNode" />
-              <item name="19" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -146,7 +134,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FARKIFY Project" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -191,16 +179,15 @@
       <workItem from="1532174986996" duration="8456000" />
       <workItem from="1532258370702" duration="959000" />
       <workItem from="1532438632605" duration="25191000" />
-      <workItem from="1532528035571" duration="582000" />
+      <workItem from="1532528035571" duration="1394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38867000" />
+    <option name="totallyTimeSpent" value="39679000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="140" y="21" width="1065" height="662" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32911393" />
       <window_info anchor="bottom" id="TODO" order="6" />
